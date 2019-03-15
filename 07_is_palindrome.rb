@@ -3,16 +3,24 @@
 
 def is_palindrome(word)
   reverse = ""
-
+  # palindrome = word
   i = 0
+
   while i < word.length
     char = word[i]
     reverse = char + reverse
-
     i += 1
-  end
+    
+   
+  end 
 
-  return reverse == word
+  if reverse == word
+    return true
+  else
+    return false
+  end 
+
+  return reverse
 end
 
 puts is_palindrome("racecar")  # => true

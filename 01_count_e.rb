@@ -1,18 +1,20 @@
 # Write a method `count_e(word)` that takes in a string word and returns the number of e's in the word
 
 def count_e(word)
- total = 0
- i = 0
+  sum = 0
 
- while i < word.length 
-  letter = word[i]
-    if letter == "e"
-      total += 1
+  i = 0
+  while i < word.length
+    char = word[i]
+
+    if char == "e"
+    sum += 1
+
     end
     i += 1
   end
 
-  return total
+  return sum
 
 end
 
