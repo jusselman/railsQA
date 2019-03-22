@@ -2,20 +2,16 @@
 # The method should count both lowercase (a) and uppercase (A)
 
 def count_a(word)
-  sum = 0
-  i = 0
+  azzz = 0 
+  i = 0 
 
-  while i < word.length
-    char = word[i]
-    i += 1
-
-    if char == "a" || char == "A"
-      sum += 1
+  while i < word.length 
+    if word[i] == "a" || word[i] == "A"
+      azzz += 1
     end
-
+    i +=1
   end
-  return sum
-  
+  return azzz
 end
 
 puts count_a("application")  # => 2

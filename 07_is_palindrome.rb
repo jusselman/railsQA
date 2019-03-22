@@ -3,22 +3,17 @@
 
 def is_palindrome(word)
   reverse = ""
-  # palindrome = word
-  i = 0
+  i = 0 
 
   while i < word.length
-    char = word[i]
-    reverse = char + reverse
+    reverse = word[i] + reverse
     i += 1
-    
-   
-  end 
+  end
 
   if reverse == word
     return true
-  else
-    return false
-  end 
+  else return false
+  end
 
   return reverse
 end

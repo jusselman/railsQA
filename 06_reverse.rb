@@ -4,17 +4,16 @@ def reverse(word)
   reversed = ""
   i = 0
 
-    while i < word.length
-      char = word[i]
-      reversed = char + reversed
+   while i < word.length
+    reversed = word[i] + reversed
 
-      i += 1
-    end
+    i += 1
+   end
 
-  return reversed
+  return reversed 
 
 end
 
-puts reverse("cat")          # => "tac"
-puts reverse("programming")  # => "gnimmargorp"
-puts reverse("bootcamp")     # => "pmactoob"
+puts reverse("learning")          
+puts reverse("programming")  
+puts reverse("in_ruby_rocks!")   

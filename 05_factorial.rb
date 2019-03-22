@@ -1,17 +1,17 @@
 # Write a method `factorial(num)` that takes in a number num and returns the product of all numbers from 1 up to and including num.
 
 def factorial(num)
- sum = 1
+  sum = 1
   i = 1
 
   while i <= num
+    sum *= i
+    
     i += 1
-    sum *= i 
-    
-    
-  end 
+  end
 
-  return sum
+
+  return sum 
 
 end
 
